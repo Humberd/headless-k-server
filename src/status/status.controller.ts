@@ -1,15 +1,30 @@
-import { Body, Controller, Put, UseGuards, UseInterceptors } from '@nestjs/common';
+import { Body, Controller, Get, Put, UseGuards } from '@nestjs/common';
 import { StatusUpdateRequest } from './_models/status-update.request';
-import { WorkerAuthGuard } from '../worker-auth.guard';
+import { WorkerAuthGuard } from '../_shared/worker-auth.guard';
+import { StatusService } from './status.service';
+import { ok } from '../utils';
+import { ClientAuthGuard } from '../_shared/client-auth.guard';
 
-@UseGuards(WorkerAuthGuard)
 @Controller('status')
 export class StatusController {
 
+  constructor(private statusService: StatusService) {
+
+  }
+
   @Put('/')
-  statusUpdate(@Body() body: StatusUpdateRequest) {
-    console.log(body);
-    return body;
+  @UseGuards(WorkerAuthGuard)
+  async statusUpdate(@Body() body: StatusUpdateRequest) {
+    const result = await this.statusService.save(body);
+    console.log(result);
+    return ok();
+  }
+
+  @Get('')
+  @UseGuards(ClientAuthGuard)
+  async read() {
+    const result = await this.statusService.read();
+    return result;
   }
 
 }

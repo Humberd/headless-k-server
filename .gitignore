@@ -137,3 +137,5 @@ typings/
 
 .idea
 dist
+
+serviceAccountKey.json
