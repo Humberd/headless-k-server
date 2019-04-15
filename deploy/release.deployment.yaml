@@ -26,6 +26,14 @@ spec:
               value: '$(WORKER_TOKEN)'
             - name: SERVICE_ACCOUNT_KEY
               value: '$(SERVICE_ACCOUNT_KEY)'
+            - name: MONGO_URL
+              value: '$(MONGO_URL)'
+            - name: MONGO_USERNAME
+              value: '$(MONGO_USERNAME)'
+            - name: MONGO_PASSWORD
+              value: '$(MONGO_PASSWORD)'
+            - name: MONGO_DATABASE
+              value: '$(MONGO_DATABASE)'
             # This is so that k8s refetches latest image
             - name: RELEASE_ID
               value: '$(Release.DeploymentId)'
