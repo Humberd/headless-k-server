@@ -9,9 +9,9 @@ import { MongooseModule } from '@nestjs/mongoose';
 
 @Module({
   imports: [
-    MongooseModule.forRoot(getMongoConnectionString(), {useNewUrlParser: true}),
+    // MongooseModule.forRoot(getMongoConnectionString(), {useNewUrlParser: true}),
     // JobsModule
-    StatusModule
+    // StatusModule
   ],
   controllers: [AppController],
   providers: [
