@@ -10,6 +10,7 @@ export function initFirebase() {
   try {
     serviceAccountKeyObject = JSON.parse(keyString);
   } catch (e) {
+    console.log(keyString);
     console.error('There was a problem parsing SERVICE_ACCOUNT_KEY env variable');
     throw e;
   }
