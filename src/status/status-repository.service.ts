@@ -2,7 +2,7 @@ import { Injectable } from '@nestjs/common';
 import { InjectModel } from '@nestjs/mongoose';
 import { Model } from 'mongoose';
 import { StatusDao } from './_models/status.dao';
-import { StatusUpdateRequest } from './_models/status-update.request';
+import { StatusUpdateRequest } from './_models/status.dto';
 
 @Injectable()
 export class StatusRepositoryService {
