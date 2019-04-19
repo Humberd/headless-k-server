@@ -11,6 +11,9 @@ import { TokensRepositoryService } from './tokens-repository.service';
   providers: [
     TokensService,
     TokensRepositoryService
+  ],
+  exports: [
+    TokensService
   ]
 })
 export class TokensModule {
