@@ -4,15 +4,15 @@ import { StatusUpdateRequest } from './_models/status.dto';
 
 @Injectable()
 export class StatusService {
-  constructor(private statusRepositoryService: StatusRepositoryService) {
+  constructor(private repository: StatusRepositoryService) {
 
   }
 
   async save(data: StatusUpdateRequest) {
-    return await this.statusRepositoryService.save(data);
+    return await this.repository.save(data);
   }
 
   async read() {
-    return this.statusRepositoryService.read();
+    return this.repository.read();
   }
 }

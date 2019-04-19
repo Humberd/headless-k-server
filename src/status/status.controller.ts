@@ -1,10 +1,9 @@
-import { Body, Controller, Get, HttpException, HttpStatus, NotFoundException, Put, Res, UseGuards } from '@nestjs/common';
+import { Body, Controller, Get, NotFoundException, Put, UseGuards } from '@nestjs/common';
 import { StatusResponse, StatusUpdateRequest } from './_models/status.dto';
 import { WorkerAuthGuard } from '../_shared/worker-auth.guard';
 import { StatusService } from './status.service';
 import { elapsedTimeSince, ok, time } from '../utils';
 import { ClientAuthGuard } from '../_shared/client-auth.guard';
-import { Response } from 'express';
 
 @Controller('status')
 export class StatusController {
@@ -16,7 +15,7 @@ export class StatusController {
   @Put('/')
   @UseGuards(WorkerAuthGuard)
   async statusUpdate(@Body() body: StatusUpdateRequest) {
-    const result = await this.statusService.save(body);
+    await this.statusService.save(body);
     return ok();
   }
 

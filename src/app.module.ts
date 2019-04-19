@@ -6,12 +6,14 @@ import { NotificationService } from './_shared/notification.service';
 import { getMongoConnectionString } from './_shared/mongo.init';
 import { initFirebase } from './_shared/firebase.init';
 import { MongooseModule } from '@nestjs/mongoose';
+import { TokensModule } from './tokens/tokens.module';
 
 @Module({
   imports: [
     MongooseModule.forRoot(getMongoConnectionString(), {useNewUrlParser: true}),
     // JobsModule
-    StatusModule
+    StatusModule,
+    TokensModule
   ],
   controllers: [AppController],
   providers: [

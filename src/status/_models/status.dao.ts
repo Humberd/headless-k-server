@@ -1,5 +1,5 @@
 import * as mongoose from 'mongoose';
-import { Document, SchemaTimestampsConfig } from 'mongoose';
+import { Document } from 'mongoose';
 
 export interface StatusDao extends Document {
   _id: string;
