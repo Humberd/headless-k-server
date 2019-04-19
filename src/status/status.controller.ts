@@ -31,7 +31,7 @@ export class StatusController {
       return res.sendStatus(404);
     }
 
-    if (elapsedTimeSinceNow(result.updatedAt.getTime(), time(5, 'minutes'))) {
+    if (elapsedTimeSinceNow(result.updatedAt.getTime(), time(1, 'minutes'))) {
       return {
         version: result.version,
         status: 'DISCONNECTED',
