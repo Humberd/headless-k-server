@@ -23,6 +23,6 @@ export function time(value: number, unit: 'seconds' | 'minutes' | 'hours' | 'day
   }
 }
 
-export function elapsedTimeSinceNow(value: number, desiredInterval: number): boolean {
-  return Date.now() > (value + desiredInterval);
+export function elapsedTimeSince(value: number, elapsedTime: number): boolean {
+  return Date.now() > (value + elapsedTime);
 }

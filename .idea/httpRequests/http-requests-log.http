@@ -1,0 +1,372 @@
+PUT http://localhost:3000/status
+Authorization: xyz
+Content-Type: application/json
+
+{
+  "version": 6,
+  "status": "ok"
+}
+
+<> 2019-04-19T091657.200.json
+
+###
+
+PUT http://localhost:3000/status
+Authorization: xyz
+Content-Type: application/json
+
+{
+  "version": 6,
+  "status": "ok"
+}
+
+<> 2019-04-19T091154.200.json
+
+###
+
+GET http://localhost:3000/status
+Authorization: abcc
+
+<> 2019-04-19T090056.403.json
+
+###
+
+GET http://localhost:3000/status
+Authorization: abc
+
+###
+
+GET http://localhost:3000/status
+
+<> 2019-04-19T090024.403.json
+
+###
+
+GET http://localhost:3000/status
+
+<> 2019-04-19T085920.403.json
+
+###
+
+GET http://localhost:3000/status
+
+<> 2019-04-19T085906.403.json
+
+###
+
+GET http://localhost:3000/status
+Authorization: abc
+
+###
+
+PUT http://localhost:3000/status
+Authorization: xyz
+Content-Type: application/json
+
+{
+  "version": 6,
+  "status": "ok"
+}
+
+<> 2019-04-19T085758.200.json
+
+###
+
+GET http://localhost:3000/status
+Authorization: abc
+
+###
+
+GET http://localhost:3000/status
+Authorization: abc
+
+###
+
+GET http://localhost:3000/status
+Authorization: abc
+
+###
+
+PUT http://localhost:3000/status
+Authorization: xyz
+Content-Type: application/json
+
+{
+  "version": 6,
+  "status": "ok"
+}
+
+###
+
+GET https://server.headless-k.quazarus.com/status
+Authorization: abc
+
+<> 2019-04-17T094506.200.json
+
+###
+
+GET http://server.headless-k.quazarus.com/status
+Authorization: abc
+
+<> 2019-04-17T094457.308.html
+
+###
+
+GET https://server.headless-k.quazarus.com/status
+Authorization: abc
+
+<> 2019-04-17T094447.200.json
+
+###
+
+GET https://server.headless-k.quazarus.com/status
+Authorization: abc
+
+<> 2019-04-15T114912-4.200.json
+
+###
+
+GET https://server.headless-k.quazarus.com/status
+Authorization: abc
+
+<> 2019-04-15T114912-3.200.json
+
+###
+
+GET https://server.headless-k.quazarus.com/status
+Authorization: abc
+
+<> 2019-04-15T114912-2.200.json
+
+###
+
+GET https://server.headless-k.quazarus.com/status
+Authorization: abc
+
+<> 2019-04-15T114912-1.200.json
+
+###
+
+GET https://server.headless-k.quazarus.com/status
+Authorization: abc
+
+<> 2019-04-15T114912.200.json
+
+###
+
+GET https://server.headless-k.quazarus.com/status
+Authorization: abc
+
+<> 2019-04-15T114911-1.200.json
+
+###
+
+GET https://server.headless-k.quazarus.com/status
+Authorization: abc
+
+<> 2019-04-15T114911.200.json
+
+###
+
+GET https://server.headless-k.quazarus.com/status
+Authorization: abc
+
+<> 2019-04-15T114817.200.json
+
+###
+
+GET https://server.headless-k.quazarus.com/status
+Authorization: abc
+
+<> 2019-04-15T114816.200.json
+
+###
+
+GET https://server.headless-k.quazarus.com/status
+Authorization: abc
+
+<> 2019-04-15T114815.200.json
+
+###
+
+GET https://server.headless-k.quazarus.com/status
+Authorization: abc
+
+<> 2019-04-15T114814.502.html
+
+###
+
+GET https://server.headless-k.quazarus.com/status
+Authorization: abc
+
+<> 2019-04-15T114805.200.json
+
+###
+
+GET https://server.headless-k.quazarus.com/status
+Authorization: abc
+
+<> 2019-04-15T114804.200.json
+
+###
+
+GET https://server.headless-k.quazarus.com/status
+Authorization: abc
+
+<> 2019-04-15T114206.200.json
+
+###
+
+GET https://server.headless-k.quazarus.com/status
+Authorization: abc
+
+<> 2019-04-15T114035.502.html
+
+###
+
+GET https://server.headless-k.quazarus.com/status
+Authorization: abc
+
+<> 2019-04-15T113920.200.json
+
+###
+
+PUT https://server.headless-k.quazarus.com/status
+Authorization: xyz
+Content-Type: application/json
+
+{
+  "version": 7,
+  "status": "ok"
+}
+
+<> 2019-04-15T113915.200.json
+
+###
+
+GET https://server.headless-k.quazarus.com/status
+Authorization: abc
+
+<> 2019-04-15T113910.200.json
+
+###
+
+PUT https://server.headless-k.quazarus.com/status
+Authorization: xyz
+Content-Type: application/json
+
+{
+  "version": 6,
+  "status": "ok"
+}
+
+<> 2019-04-15T113907.200.json
+
+###
+
+GET https://server.headless-k.quazarus.com/status
+Authorization: abc
+
+<> 2019-04-15T110255.200.json
+
+###
+
+PUT https://server.headless-k.quazarus.com/status
+Authorization: xyz
+Content-Type: application/json
+
+{
+  "version": 6,
+  "status": "ok"
+}
+
+<> 2019-04-15T110253.200.json
+
+###
+
+GET https://server.headless-k.quazarus.com/status
+Authorization: abc
+
+###
+
+GET https://server.headless-k.quazarus.com/status
+Authorization: abc
+
+<> 2019-04-15T105711.200.json
+
+###
+
+PUT https://server.headless-k.quazarus.com/status
+Authorization: xyz
+Content-Type: application/json
+
+{
+  "version": 6,
+  "status": "ok"
+}
+
+<> 2019-04-15T105707.200.json
+
+###
+
+GET https://server.headless-k.quazarus.com/status
+Authorization: abc
+
+###
+
+GET https://server.headless-k.quazarus.com/status
+
+<> 2019-04-15T105635.403.json
+
+###
+
+GET http://localhost:3000/status
+Authorization: abc
+
+###
+
+GET http://localhost:3000/status
+Authorization: abc
+
+<> 2019-04-14T051137.200.json
+
+###
+
+GET http://localhost:3000/status
+Authorization: abc
+
+<> 2019-04-14T051131.200.json
+
+###
+
+GET http://localhost:3000/status
+Authorization: abc
+
+###
+
+GET http://localhost:3000/status
+Authorization: abc
+
+###
+
+GET http://localhost:3000/status
+Authorization: abc
+
+<> 2019-04-14T122554.200.json
+
+###
+
+GET http://localhost:3000/status
+Authorization: abc
+
+<> 2019-04-14T122442.200.json
+
+###
+
+GET http://localhost:3000/status
+Authorization: abc
+
+<> 2019-04-14T122208.200.json
+
+###
+
