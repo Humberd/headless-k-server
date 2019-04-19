@@ -25,7 +25,7 @@ export class StatusController {
   async read(): Promise<StatusResponse> {
     const result = await this.statusService.read();
 
-    if (result) {
+    if (!result) {
       throw new NotFoundException();
     }
 
