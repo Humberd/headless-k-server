@@ -9,7 +9,7 @@ import { NotificationService } from '../_shared/notification.service';
 
 @Injectable()
 export class StatusService implements OnModuleInit, OnModuleDestroy {
-  private readonly DISCONNECT_TIME_INTERVAL = 1;
+  private readonly DISCONNECT_TIME_INTERVAL = 0.1;
   private readonly logger = new Logger(StatusService.name);
 
   private readonly destroy$ = new Subject();
@@ -47,11 +47,14 @@ export class StatusService implements OnModuleInit, OnModuleDestroy {
     }
 
     try {
-      await this.notificationService.sendWorkerDisconnected(fcmToken, this.DISCONNECT_TIME_INTERVAL);
+      const response = await this.notificationService.sendWorkerDisconnected(fcmToken, this.DISCONNECT_TIME_INTERVAL);
+      console.log(response);
     } catch (e) {
       this.logger.error(`Notification could not be sent -> ${e}`);
       return;
     }
+
+    this.logger.log('Notification sent successfully');
 
   }
 
