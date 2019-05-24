@@ -13,7 +13,7 @@ export class TokensRepositoryService {
   }
 
   async saveFcm(fcmToken: string) {
-    this.logger.log(`Received fcm token update`);
+    this.logger.log(`Received fcm token update ${fcmToken}`);
 
     return this.tokensModel.findByIdAndUpdate(
         this.WORKER_ID,

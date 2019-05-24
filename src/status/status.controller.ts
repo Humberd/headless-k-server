@@ -32,13 +32,15 @@ export class StatusController {
       return {
         version: result.version,
         status: 'DISCONNECTED',
-        updatedAt: result.updatedAt.getTime()
+        updatedAt: result.updatedAt.getTime(),
+        message: result.message
       };
     }
     return {
       version: result.version,
       status: result.status.toUpperCase(),
-      updatedAt: result.updatedAt.getTime()
+      updatedAt: result.updatedAt.getTime(),
+      message: result.message
     };
   }
 
