@@ -7,6 +7,71 @@ Content-Type: application/json
   "status": "ok"
 }
 
+<> 2019-04-19T112529.200.json
+
+###
+
+PUT http://localhost:3000/status
+Authorization: xyz
+Content-Type: application/json
+
+{
+  "version": 6,
+  "status": "ok"
+}
+
+<> 2019-04-19T112034.200.json
+
+###
+
+PUT http://localhost:3000/status
+Authorization: xyz
+Content-Type: application/json
+
+{
+  "version": 6,
+  "status": "ok"
+}
+
+<> 2019-04-19T112000.200.json
+
+###
+
+PUT http://localhost:3000/status
+Authorization: xyz
+Content-Type: application/json
+
+{
+  "version": 6,
+  "status": "ok"
+}
+
+<> 2019-04-19T111929.200.json
+
+###
+
+PUT http://localhost:3000/status
+Authorization: xyz
+Content-Type: application/json
+
+{
+  "version": 6,
+  "status": "ok"
+}
+
+<> 2019-04-19T111619.200.json
+
+###
+
+PUT http://localhost:3000/status
+Authorization: xyz
+Content-Type: application/json
+
+{
+  "version": 6,
+  "status": "ok"
+}
+
 <> 2019-04-19T110253.200.json
 
 ###
@@ -384,49 +449,6 @@ GET https://server.headless-k.quazarus.com/status
 Authorization: abc
 
 <> 2019-04-15T110255.200.json
-
-###
-
-PUT https://server.headless-k.quazarus.com/status
-Authorization: xyz
-Content-Type: application/json
-
-{
-  "version": 6,
-  "status": "ok"
-}
-
-<> 2019-04-15T110253.200.json
-
-###
-
-GET https://server.headless-k.quazarus.com/status
-Authorization: abc
-
-###
-
-GET https://server.headless-k.quazarus.com/status
-Authorization: abc
-
-<> 2019-04-15T105711.200.json
-
-###
-
-PUT https://server.headless-k.quazarus.com/status
-Authorization: xyz
-Content-Type: application/json
-
-{
-  "version": 6,
-  "status": "ok"
-}
-
-<> 2019-04-15T105707.200.json
-
-###
-
-GET https://server.headless-k.quazarus.com/status
-Authorization: abc
 
 ###
 

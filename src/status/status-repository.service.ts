@@ -17,7 +17,8 @@ export class StatusRepositoryService {
         this.WORKER_ID,
         {
           version: data.version,
-          status: data.status
+          status: data.status,
+          message: data.message
         } as StatusDao,
         {
           upsert: true,
