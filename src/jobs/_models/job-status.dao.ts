@@ -1,5 +1,5 @@
-import { Document } from "mongoose";
-import * as mongoose from "mongoose";
+import * as mongoose from 'mongoose';
+import { Document } from 'mongoose';
 import { JobStatus } from './job-status-request';
 
 export interface JobStatusDao extends Document {
@@ -9,6 +9,7 @@ export interface JobStatusDao extends Document {
   status: JobStatus;
   lastSuccess: Date;
   lastCheck: Date;
+  lastError: Date;
   createdAt: Date;
   updatedAt: Date;
 }
@@ -28,5 +29,6 @@ export const JobStatusSchema = new mongoose.Schema({
     required: true
   },
   lastSuccess: Date,
-  lastCheck: Date
+  lastCheck: Date,
+  lastError: Date
 }, {timestamps: true});
