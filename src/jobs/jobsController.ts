@@ -8,7 +8,7 @@ export class JobsController {
 
   @Put('/')
   @UseGuards(WorkerAuthGuard)
-  async createNewDay(@Body() body: JobStatusRequest) {
+  async updateJobStatus(@Body() body: JobStatusRequest) {
     console.log(body);
     return ok();
   }
