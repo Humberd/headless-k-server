@@ -18,7 +18,10 @@ export class JobsRepositoryService {
           timeInterval: data.timeInterval,
           status: JobStatus.SUCCESS,
           lastSuccess: new Date()
-        } as JobStatusDao
+        } as JobStatusDao,
+        {
+          upsert: true,
+        }
     );
   }
 
@@ -30,7 +33,10 @@ export class JobsRepositoryService {
           timeInterval: data.timeInterval,
           status: JobStatus.ALREADY_DONE,
           lastCheck: new Date()
-        } as JobStatusDao
+        } as JobStatusDao,
+        {
+          upsert: true,
+        }
     );
   }
 
@@ -42,7 +48,10 @@ export class JobsRepositoryService {
           timeInterval: data.timeInterval,
           status: JobStatus.SUCCESS,
           lastError: new Date()
-        } as JobStatusDao
+        } as JobStatusDao,
+        {
+          upsert: true,
+        }
     );
   }
 }

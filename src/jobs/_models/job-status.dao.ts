@@ -7,9 +7,9 @@ export interface JobStatusDao extends Document {
   name: string;
   timeInterval: number;
   status: JobStatus;
-  lastSuccess: Date;
-  lastCheck: Date;
-  lastError: Date;
+  lastSuccess?: Date;
+  lastCheck?: Date;
+  lastError?: Date;
   createdAt: Date;
   updatedAt: Date;
 }
@@ -26,7 +26,6 @@ export const JobStatusSchema = new mongoose.Schema({
   },
   status: {
     enum: Object.keys(JobStatus),
-    required: true
   },
   lastSuccess: Date,
   lastCheck: Date,
