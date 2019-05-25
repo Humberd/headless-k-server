@@ -54,4 +54,8 @@ export class JobsRepositoryService {
         }
     );
   }
+
+  async readAll() {
+    return this.jobStatusModel.find();
+  }
 }

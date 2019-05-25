@@ -23,4 +23,8 @@ export class JobsService {
         throw new BadRequestException(`${JSON.stringify(data)} has invalid status`);
     }
   }
+
+  async readAll() {
+    return this.repository.readAll();
+  }
 }
