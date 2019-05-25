@@ -17,7 +17,6 @@ export class JobsController {
   @UseGuards(ClientAuthGuard)
   async getJobsStatuses(): Promise<JobStatusDto[]> {
     return (await this.jobsService.readAll())
-    // @ts-ignore
         .map(it => ({
           id: it.id,
           name: it.name,
