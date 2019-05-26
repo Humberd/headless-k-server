@@ -17,7 +17,8 @@ export class JobsRepositoryService {
           name: data.jobName,
           timeInterval: data.timeInterval,
           status: JobStatus.SUCCESS,
-          lastSuccess: new Date()
+          lastSuccess: new Date(),
+          lastCheck: new Date()
         } as JobStatusDao,
         {
           upsert: true,
