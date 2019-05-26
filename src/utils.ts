@@ -5,6 +5,13 @@ export function ok() {
   };
 }
 
+export function toUnixTimestamp(date?: Date): number | undefined {
+  if (!date) {
+    return;
+  }
+  return date.getTime();
+}
+
 /**
  * @returns value in ms
  */

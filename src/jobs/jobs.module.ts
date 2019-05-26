@@ -1,12 +1,13 @@
 import { Module } from '@nestjs/common';
 import { MongooseModule } from '@nestjs/mongoose';
-import { DaysService } from './days.service';
-import { DaysController } from './days.controller';
-import { DaySchema } from './models/day.schema';
+import { JobsController } from './jobs.controller';
+import { JobStatusSchema } from './_models/job-status.dao';
+import { JobsService } from './jobs.service';
+import { JobsRepositoryService } from './jobs-repository.service';
 
 @Module({
-  imports: [MongooseModule.forFeature([{name: 'Day', schema: DaySchema}])],
-  providers: [DaysService],
-  controllers: [DaysController],
+  imports: [MongooseModule.forFeature([{name: 'Job', schema: JobStatusSchema}])],
+  controllers: [JobsController],
+  providers: [JobsService, JobsRepositoryService],
 })
 export class JobsModule {}
